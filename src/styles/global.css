@@ -39,3 +39,9 @@ h1, h2, h3, p { margin-top: 0; } h1 { font-size: clamp(4rem, 8vw, 8.8rem); line-
 .portrait-top, .portrait-bottom { position: relative; z-index: 1; }
 .phone-link { display: block; width: fit-content; margin-top: 1rem; padding-bottom: .7rem; color: var(--cyan); font-size: clamp(1rem, 2.4vw, 2.1rem); border-bottom: 1px solid var(--cyan); }
 .phone-link span { color: var(--coral); }
+.back-to-top { position: fixed; z-index: 20; right: 1.5rem; bottom: 1.5rem; width: 3.25rem; height: 3.25rem; display: grid; place-items: center; border: 1px solid var(--paper); border-radius: 50%; background: var(--coral); color: var(--paper); cursor: pointer; opacity: 0; visibility: hidden; transform: translateY(1rem); transition: opacity .3s ease, visibility .3s ease, transform .3s ease, background .2s ease; box-shadow: 0 8px 24px rgba(23, 23, 23, .2); }
+.back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover, .back-to-top:focus-visible { background: var(--ink); outline: 2px solid var(--acid); outline-offset: 4px; }
+.back-to-top span:first-child { font-size: 1.45rem; line-height: 1; }
+.back-to-top-tooltip { position: absolute; right: calc(100% + .75rem); width: max-content; padding: .5rem .65rem; background: var(--ink); color: var(--paper); font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; opacity: 0; pointer-events: none; transform: translateX(.4rem); transition: opacity .2s ease, transform .2s ease; }
+.back-to-top:hover .back-to-top-tooltip, .back-to-top:focus-visible .back-to-top-tooltip { opacity: 1; transform: translateX(0); }

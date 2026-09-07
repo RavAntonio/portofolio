@@ -112,12 +112,16 @@ const projectTags = {
       <section class="contact section-shell" id="contact"><div class="contact-orbit"></div><div class="contact-content reveal"><p class="eyebrow">06 / Contact</p><h2>Une idée en tête ?<br /><em>Faisons-la exister.</em></h2><a class="email-link" href="mailto:ravelonarivoantonio@gmail.com">ravelonarivoantonio@gmail.com <span>↗</span></a><a class="phone-link" href="tel:+261326327749">+261 32 63 277 49 <span>↗</span></a><div class="contact-footer"><span>Antananarivo, Madagascar</span><span>Malagasy · Français · Anglais</span><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></section>
     </main>
 
-    <footer class="site-footer"><span>© 2026 Antonio Ravelonarivo</span><span>Conçu avec intention.</span><a href="#top">Retour en haut ↑</a></footer>
+    <button class="back-to-top" type="button" aria-label="Revenir en haut de la page" data-back-to-top><span aria-hidden="true">↑</span><span class="back-to-top-tooltip">Revenir en haut</span></button>
+    <footer class="site-footer"><span>© 2026 Antonio Ravelonarivo</span><span>Conçu avec intention.</span></footer>
     <script>
       const glow = document.querySelector('.cursor-glow');
       window.addEventListener('pointermove', (event) => { glow.style.transform = `translate(${event.clientX - 120}px, ${event.clientY - 120}px)`; });
       const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); }), { threshold: 0.12 });
       document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+      const backToTop = document.querySelector('[data-back-to-top]');
+      window.addEventListener('scroll', () => backToTop.classList.toggle('is-visible', window.scrollY > 500), { passive: true });
+      backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     </script>
   </body>
 </html>
