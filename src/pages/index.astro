@@ -1,0 +1,123 @@
+---
+import '../styles/global.css';
+import portrait from '../images/RAVELONARIVO Tsiorimbola Anthonio.png';
+import evidyImage from '../images/e-vidy.png';
+
+const skills = ['Angular', 'React', 'Java', 'Quarkus', 'Node.js', 'PostgreSQL', 'Kafka', 'BPMN 2.0', 'Kogito', 'Gemini API', 'Docker', 'ERPNext'];
+const projectTags = {
+  evidy: ['Angular', 'Node.js', 'MongoDB', 'Leaflet'],
+  newapp: ['Spring Boot', 'ERPNext', 'REST API']
+};
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Portfolio d'Antonio Ravelonarivo, développeur full stack web et IA à Antananarivo." />
+    <title>Antonio Ravelonarivo — Full Stack & IA</title>
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Retour en haut">AR<span>.</span></a>
+      <nav aria-label="Navigation principale">
+        <a href="#expertise">Expertise</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="mailto:ravelonarivoantonio@gmail.com">Disponible <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Développeur full stack · Antananarivo</p>
+          <h1>Je construis des<br /><em>systèmes</em> qui<br />font avancer<br />les idées.</h1>
+          <p class="hero-intro">Du workflow métier augmenté par l’IA aux produits web qui vivent en production, je transforme la complexité en expériences simples, fiables et utiles.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#projets">Explorer mon travail <span>↓</span></a>
+            <a class="text-link" href="mailto:ravelonarivoantonio@gmail.com">Parlons d’un projet <span>↗</span></a>
+          </div>
+        </div>
+        <div class="hero-art reveal delay-1" aria-label="Portrait d'Antonio Ravelonarivo">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="portrait-card">
+            <img class="portrait-photo" src={portrait.src} alt="Antonio Ravelonarivo" />
+            <div class="portrait-top"><span>01 / 04</span><span>ANTONIO</span></div>
+            <div class="portrait-bottom"><span>BUILDING<br />WITH INTENT</span><span>2026</span></div>
+          </div>
+          <span class="floating-label label-one">FULL STACK</span>
+          <span class="floating-label label-two">IA / WORKFLOWS</span>
+        </div>
+        <div class="scroll-note"><span class="scroll-line"></span> Faire défiler pour découvrir</div>
+      </section>
+
+      <section class="marquee-band" aria-label="Technologies utilisées">
+        <div class="marquee-track">
+          <span>DESIGNING SYSTEMS</span><b>✦</b><span>SHIPPING WITH CARE</span><b>✦</b><span>AI × WEB × DATA</span><b>✦</b><span>DESIGNING SYSTEMS</span><b>✦</b><span>SHIPPING WITH CARE</span><b>✦</b><span>AI × WEB × DATA</span><b>✦</b>
+        </div>
+      </section>
+
+      <section class="intro section-shell" id="expertise">
+        <div class="section-index">01 <span>/</span></div>
+        <div class="intro-content reveal">
+          <p class="eyebrow">À propos</p>
+          <h2>Pas seulement du code.<br /><span>Une vision d’ensemble.</span></h2>
+          <p class="large-copy">Développeur Full Stack Web avec une passion pour les architectures qui rendent les organisations plus fluides. Je travaille à l’intersection du produit, de la donnée et de l’intelligence artificielle.</p>
+          <div class="stats-row">
+            <div><strong>03</strong><span>projets<br />majeurs</span></div>
+            <div><strong>∞</strong><span>curiosité<br />technique</span></div>
+            <div><strong>01</strong><span>objectif :<br />livrer mieux</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="capabilities section-shell">
+        <div class="section-index">02 <span>/</span></div>
+        <div class="capabilities-content">
+          <div class="section-heading reveal"><p class="eyebrow">Ce que je fais</p><h2>Transformer<br /><em>l’ambition</em> en produit.</h2></div>
+          <div class="capability-grid">
+            <article class="capability reveal"><span class="capability-number">01</span><h3>Architectures<br />Full Stack</h3><p>Des applications solides, de l’API jusqu’à l’interface, pensées pour évoluer sans perdre leur clarté.</p><a href="#projets">Voir les projets <span>↗</span></a></article>
+            <article class="capability capability-accent reveal delay-1"><span class="capability-number">02</span><h3>IA générative<br />& workflows</h3><p>Des assistants et processus intelligents qui transforment le langage naturel en actions concrètes.</p><a href="#experience">Mon expérience <span>↗</span></a></article>
+            <article class="capability reveal delay-2"><span class="capability-number">03</span><h3>Systèmes<br />connectés</h3><p>Kafka, ERPNext, BPMN, données : relier les briques pour faire circuler l’information au bon moment.</p><a href="#contact">Construire ensemble <span>↗</span></a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-shell" id="projets">
+        <div class="section-index">03 <span>/</span></div>
+        <div class="projects-content">
+          <div class="section-heading project-heading reveal"><div><p class="eyebrow">Sélection de projets</p><h2>Des idées mises<br /><em>en mouvement.</em></h2></div><span class="project-count">( 02 )</span></div>
+          <article class="project-card project-main reveal">
+            <div class="project-visual visual-workflow"><div class="visual-grid"></div><div class="workflow-node node-a">INPUT</div><div class="workflow-node node-b">AI</div><div class="workflow-node node-c">BPMN</div><div class="workflow-line line-a"></div><div class="workflow-line line-b"></div><span class="visual-caption">ORANGE MADAGASCAR<br /><small>PROCESS INTELLIGENCE PLATFORM</small></span></div>
+            <div class="project-info"><span class="project-year">2025 — 2026</span><h3>Orchestration métier<br /><em>assistée par IA</em></h3><p>Une plateforme full stack pour modéliser, exécuter et superviser des processus métier BPMN 2.0, avec un moteur Prompt-to-BPMN et un assistant Gemini multi-session.</p><div class="tag-list">{skills.slice(0, 7).map((skill) => <span>{skill}</span>)}</div></div>
+          </article>
+          <div class="project-pair">
+            <article class="project-card reveal"><div class="project-visual visual-market"><img class="project-image" src={evidyImage.src} alt="Capture d'écran du projet E-Vidy" /><div class="project-image-overlay"></div><div class="market-label">E-VIDY<br /><small>SMART COMMERCE</small></div></div><div class="project-info"><span class="project-year">01 / 02</span><h3>E-Vidy</h3><p>Gestion de centre commercial, e-commerce multi-boutiques et livraison géolocalisée.</p><div class="tag-list">{projectTags.evidy.map((tag) => <span>{tag}</span>)}</div><a class="project-link" href="https://m1p13mean-brady-antonio.onrender.com/" target="_blank" rel="noreferrer">Visiter le projet <span>↗</span></a></div></article>
+            <article class="project-card reveal delay-1"><div class="project-visual visual-erp"><span class="erp-symbol">N</span><span class="erp-caption">NEWAPP<br /><small>ERP INTEGRATION</small></span></div><div class="project-info"><span class="project-year">02 / 02</span><h3>NewApp</h3><p>Intégration ERPNext et automatisation du cycle d’approvisionnement.</p><div class="tag-list">{projectTags.newapp.map((tag) => <span>{tag}</span>)}</div><a class="project-link" href="https://github.com/AntonioRav/ErpNewApp" target="_blank" rel="noreferrer">Voir sur GitHub <span>↗</span></a></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section-shell" id="experience">
+        <div class="section-index">04 <span>/</span></div>
+        <div class="experience-content"><div class="section-heading reveal"><p class="eyebrow">Parcours</p><h2>Apprendre.<br /><em>Construire.</em><br />Recommencer.</h2></div><div class="timeline"><div class="timeline-item reveal"><span class="timeline-date">2025 — 2026</span><div><h3>Stage Développeur Full Stack & IA</h3><p class="timeline-company">Orange Madagascar</p><p>Conception d’une plateforme d’orchestration métier autour de BPMN 2.0, Kogito, Kafka et Gemini API. Éditeur web, moteur Prompt-to-BPMN, dashboards et supervision.</p></div></div><div class="timeline-item reveal delay-1"><span class="timeline-date">2025 — aujourd’hui</span><div><h3>Master 1 Informatique</h3><p class="timeline-company">IT University · Antananarivo</p><p>Approfondissement des architectures logicielles, de l’ingénierie web et des systèmes distribués.</p></div></div></div></div>
+      </section>
+
+      <section class="toolkit section-shell"><div class="section-index">05 <span>/</span></div><div class="toolkit-content reveal"><p class="eyebrow">Boîte à outils</p><div class="toolkit-list">{skills.map((skill, index) => <span style={`--i: ${index}`}>{skill}</span>)}</div></div></section>
+
+      <section class="contact section-shell" id="contact"><div class="contact-orbit"></div><div class="contact-content reveal"><p class="eyebrow">06 / Contact</p><h2>Une idée en tête ?<br /><em>Faisons-la exister.</em></h2><a class="email-link" href="mailto:ravelonarivoantonio@gmail.com">ravelonarivoantonio@gmail.com <span>↗</span></a><a class="phone-link" href="tel:+261326327749">+261 32 63 277 49 <span>↗</span></a><div class="contact-footer"><span>Antananarivo, Madagascar</span><span>Malagasy · Français · Anglais</span><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></section>
+    </main>
+
+    <footer class="site-footer"><span>© 2026 Antonio Ravelonarivo</span><span>Conçu avec intention.</span><a href="#top">Retour en haut ↑</a></footer>
+    <script>
+      const glow = document.querySelector('.cursor-glow');
+      window.addEventListener('pointermove', (event) => { glow.style.transform = `translate(${event.clientX - 120}px, ${event.clientY - 120}px)`; });
+      const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); }), { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+    </script>
+  </body>
+</html>
